@@ -1,2 +1,1 @@
-# Proteus - SSL Bypass for Fortnite
-Essentially [Cobalt](https://github.com/Milxnor/Cobalt) rewritten in C99
+# Proteus - Open-source utility menu for Fortnite (6.31)
