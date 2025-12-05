@@ -3,7 +3,11 @@ name = "proteus"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
+libc = "0.2.178"
 serde = "1.0.228"
 serde_json = "1.0.145"
 windows = {version = "0.62.2", features = [
@@ -13,4 +17,9 @@ windows = {version = "0.62.2", features = [
     "Win32_Foundation",
     "Win32_System_Diagnostics",
     "Win32_Security",
+    "Win32_UI_WindowsAndMessaging"
 ]}
+
+[build-dependencies]
+bindgen = "0.72.1"
+cc = "1.2.48"
